@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Hu\\Documents\\Programming Projects\\Projects\\BookHouseAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C934E087-5869-4173-9C3E-6FE209C58B17}|PresentationLayer\\1.PresentationLayer.csproj|c:\\users\\hu\\documents\\programming projects\\projects\\bookhouseapi\\presentationlayer\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C934E087-5869-4173-9C3E-6FE209C58B17}|PresentationLayer\\1.PresentationLayer.csproj|solutionrelative:presentationlayer\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BookController.cs",
+              "DocumentMoniker": "C:\\Users\\Hu\\Documents\\Programming Projects\\Projects\\BookHouseAPI\\PresentationLayer\\Controllers\\BookController.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\Controllers\\BookController.cs",
+              "ToolTip": "C:\\Users\\Hu\\Documents\\Programming Projects\\Projects\\BookHouseAPI\\PresentationLayer\\Controllers\\BookController.cs",
+              "RelativeToolTip": "PresentationLayer\\Controllers\\BookController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-09T15:05:00.012Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
