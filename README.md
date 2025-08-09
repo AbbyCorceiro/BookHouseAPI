@@ -9,7 +9,8 @@
 
 <h3>What's Next?</h3>
 <ul>
-  <li>Revisar el endpoint de PUT</li>
-  <li>Implementar el repositorio con un service y migrar la lógica a la capa de business</li>
-  <li>Acomodar los endpoints para el repository pattern</li>
+  <li>[ ] Revisar el endpoint de PUT</li>
+  <li>[ ] Implementar el repositorio con un service y migrar la lógica a la capa de business</li>
+  <li>[ ] Acomodar los endpoints para el repository pattern</li>
 </ul>
+
