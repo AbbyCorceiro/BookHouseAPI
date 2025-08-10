@@ -13,3 +13,4 @@ C:\Users\Hu\Documents\Programming Projects\Projects\BookHouseAPI\BusinessLayer\o
 C:\Users\Hu\Documents\Programming Projects\Projects\BookHouseAPI\BusinessLayer\obj\Debug\net9.0\refint\2.BusinessLayer.dll
 C:\Users\Hu\Documents\Programming Projects\Projects\BookHouseAPI\BusinessLayer\obj\Debug\net9.0\2.BusinessLayer.pdb
 C:\Users\Hu\Documents\Programming Projects\Projects\BookHouseAPI\BusinessLayer\obj\Debug\net9.0\ref\2.BusinessLayer.dll
+C:\Users\Hu\Documents\Programming Projects\Projects\BookHouseAPI\BusinessLayer\obj\Debug\net9.0\2.BusinessLayer.sourcelink.json

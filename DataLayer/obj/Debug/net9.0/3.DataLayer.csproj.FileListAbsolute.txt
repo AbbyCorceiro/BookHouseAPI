@@ -12,3 +12,4 @@ C:\Users\Hu\Documents\Programming Projects\Projects\BookHouseAPI\DataLayer\obj\D
 C:\Users\Hu\Documents\Programming Projects\Projects\BookHouseAPI\DataLayer\obj\Debug\net9.0\3.DataLayer.pdb
 C:\Users\Hu\Documents\Programming Projects\Projects\BookHouseAPI\DataLayer\obj\Debug\net9.0\3.DataLayer.genruntimeconfig.cache
 C:\Users\Hu\Documents\Programming Projects\Projects\BookHouseAPI\DataLayer\obj\Debug\net9.0\ref\3.DataLayer.dll
+C:\Users\Hu\Documents\Programming Projects\Projects\BookHouseAPI\DataLayer\obj\Debug\net9.0\3.DataLayer.sourcelink.json

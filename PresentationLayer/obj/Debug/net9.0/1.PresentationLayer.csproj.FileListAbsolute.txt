@@ -276,3 +276,4 @@ C:\Users\Hu\Documents\Programming Projects\Projects\BookHouseAPI\PresentationLay
 C:\Users\Hu\Documents\Programming Projects\Projects\BookHouseAPI\PresentationLayer\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Scripting.resources.dll
 C:\Users\Hu\Documents\Programming Projects\Projects\BookHouseAPI\PresentationLayer\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Scripting.resources.dll
 C:\Users\Hu\Documents\Programming Projects\Projects\BookHouseAPI\PresentationLayer\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\Hu\Documents\Programming Projects\Projects\BookHouseAPI\PresentationLayer\obj\Debug\net9.0\1.PresentationLayer.sourcelink.json

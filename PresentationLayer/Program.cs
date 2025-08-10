@@ -1,4 +1,6 @@
+using BusinessLayer.Services;
 using DataLayer.Context;
+using DataLayer.Repository;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -12,6 +14,8 @@ var connectionString = builder.Configuration.GetConnectionString("Connection");
 builder.Services.AddDbContext<BookHouseDBContext>(options => options.UseSqlServer(connectionString));
 
 builder.Services.AddSwaggerGen();
+builder.Services.AddScoped<IBookService, BookService>();
+builder.Services.AddScoped<IBookRepository, BookRepository>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

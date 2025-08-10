@@ -1,8 +1,6 @@
-﻿using DataLayer.Models;
-using DataLayer.Context;
-using Microsoft.AspNetCore.Http;
+﻿using BusinessLayer.Services;
+using DataLayer.Models;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 
 namespace PresentationLayer.Controllers
 {
@@ -10,50 +8,47 @@ namespace PresentationLayer.Controllers
     [ApiController]
     public class BookController : ControllerBase
     {
-        private readonly BookHouseDBContext _context;
-        public BookController(BookHouseDBContext context) 
+        private readonly IBookService _bookService;
+        public BookController(IBookService bookService) 
         { 
-            _context = context;
+            _bookService = bookService;
         }
 
         [HttpGet("all")]
         public async Task<ActionResult<IEnumerable<Book>>> GetAll() 
         {
-            return await _context.Books.ToListAsync();
+            var result = await _bookService.GetAll();
+            return Ok(result);
         }
 
         [HttpGet("id")]
         public async Task<ActionResult<IEnumerable<Book>>> GetById(int id) 
         {
-            var book = await _context.Books.FindAsync(id);
-            if (book is null) return NotFound("The book doesn´t exist");
-            return Ok(book);
+            var result = await _bookService.GetById(id);
+            if (result is null) return NotFound("The book doesn´t exist");
+            return Ok(result);
         }
 
         [HttpPost("add")]
         public async Task<ActionResult<Book>> PostBook(Book book) 
         {
-            _context.Books.Add(book);
-            await _context.SaveChangesAsync();
+            var result = await _bookService.PostBook(book);
             return CreatedAtAction(nameof(GetById), new { Id = book.Id}, book);
         }
 
         [HttpPut("modify")]
         public async Task<ActionResult<Book>> PutBook(int id, Book book) 
         {
-            if (book is null) return NotFound();
-            if (book.Id != id) return BadRequest();
-            _context.Entry(book).State = EntityState.Modified;
-            await _context.SaveChangesAsync();
-            return Ok(book);  
+            var result = await _bookService.PutBook(id, book);
+            if (result is null) return NotFound();
+            if (result.Id != id) return BadRequest();
+            return Ok(result);  
         }
 
         [HttpDelete("delete")]
         public async Task<ActionResult<Book>> DeleteBook(int id) 
         {
-            var book = await _context.Books.FindAsync(id);
-            if (book is not null) _context.Books.Remove(book);
-            await _context.SaveChangesAsync();
+            var result = await _bookService.DeleteBook(id);   
             return Ok("Book deleted");
         }
     }
