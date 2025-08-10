@@ -3,6 +3,7 @@
 <h3>About the API:</h3>
 <ul>
   <li>La API fue creada a partir de un challenge para desarrolladores trainee</li>
+  <li>Utiliza Entity Framework para la migración a la base de datos en SQL Server, y Swagger para el testing</li>
   <li>Implementa operaciones CRUD (Create, Read, Update, Delete) con los respectivos endpoints en el controllador (GET, POST, PUT, DELETE).</li>
   <li>Está diseñada con una arquitectura en capas para mayor legilibilidad del código y la organización del proyecto.</li>
   <li>Implementa el patrón de diseño de repositorio con un servicio.</li>
@@ -26,6 +27,7 @@
   <li>[x] Implementar el repositorio con un service y migrar la lógica del código</li>
   <li>[x] Acomodar los endpoints para el repository pattern</li>
 </ul>
+
 
 
 
