@@ -7,24 +7,12 @@
       "RelativeMoniker": "D:0:0:{D1D2BF47-4F6C-4106-9530-EDE35F0F91EF}|DataLayer\\3.DataLayer.csproj|solutionrelative:datalayer\\repository\\bookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C934E087-5869-4173-9C3E-6FE209C58B17}|PresentationLayer\\1.PresentationLayer.csproj|c:\\users\\hu\\documents\\programming projects\\projects\\bookhouseapi\\presentationlayer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C934E087-5869-4173-9C3E-6FE209C58B17}|PresentationLayer\\1.PresentationLayer.csproj|solutionrelative:presentationlayer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D1D2BF47-4F6C-4106-9530-EDE35F0F91EF}|DataLayer\\3.DataLayer.csproj|c:\\users\\hu\\documents\\programming projects\\projects\\bookhouseapi\\datalayer\\repository\\ibookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1D2BF47-4F6C-4106-9530-EDE35F0F91EF}|DataLayer\\3.DataLayer.csproj|solutionrelative:datalayer\\repository\\ibookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8F511DB4-A226-44A9-A8CA-793CEDC46465}|BusinessLayer\\2.BusinessLayer.csproj|c:\\users\\hu\\documents\\programming projects\\projects\\bookhouseapi\\businesslayer\\services\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8F511DB4-A226-44A9-A8CA-793CEDC46465}|BusinessLayer\\2.BusinessLayer.csproj|solutionrelative:businesslayer\\services\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C934E087-5869-4173-9C3E-6FE209C58B17}|PresentationLayer\\1.PresentationLayer.csproj|c:\\users\\hu\\documents\\programming projects\\projects\\bookhouseapi\\presentationlayer\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C934E087-5869-4173-9C3E-6FE209C58B17}|PresentationLayer\\1.PresentationLayer.csproj|solutionrelative:presentationlayer\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8F511DB4-A226-44A9-A8CA-793CEDC46465}|BusinessLayer\\2.BusinessLayer.csproj|c:\\users\\hu\\documents\\programming projects\\projects\\bookhouseapi\\businesslayer\\services\\ibookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8F511DB4-A226-44A9-A8CA-793CEDC46465}|BusinessLayer\\2.BusinessLayer.csproj|solutionrelative:businesslayer\\services\\ibookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D1D2BF47-4F6C-4106-9530-EDE35F0F91EF}|DataLayer\\3.DataLayer.csproj|c:\\users\\hu\\documents\\programming projects\\projects\\bookhouseapi\\datalayer\\repository\\ibookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1D2BF47-4F6C-4106-9530-EDE35F0F91EF}|DataLayer\\3.DataLayer.csproj|solutionrelative:datalayer\\repository\\ibookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,47 +22,8 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Hu\\Documents\\Programming Projects\\Projects\\BookHouseAPI\\PresentationLayer\\Program.cs",
-              "RelativeDocumentMoniker": "PresentationLayer\\Program.cs",
-              "ToolTip": "C:\\Users\\Hu\\Documents\\Programming Projects\\Projects\\BookHouseAPI\\PresentationLayer\\Program.cs",
-              "RelativeToolTip": "PresentationLayer\\Program.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAABEAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-10T21:24:14.346Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "BookService.cs",
-              "DocumentMoniker": "C:\\Users\\Hu\\Documents\\Programming Projects\\Projects\\BookHouseAPI\\BusinessLayer\\Services\\BookService.cs",
-              "RelativeDocumentMoniker": "BusinessLayer\\Services\\BookService.cs",
-              "ToolTip": "C:\\Users\\Hu\\Documents\\Programming Projects\\Projects\\BookHouseAPI\\BusinessLayer\\Services\\BookService.cs",
-              "RelativeToolTip": "BusinessLayer\\Services\\BookService.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-10T21:03:06.705Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IBookService.cs",
-              "DocumentMoniker": "C:\\Users\\Hu\\Documents\\Programming Projects\\Projects\\BookHouseAPI\\BusinessLayer\\Services\\IBookService.cs",
-              "RelativeDocumentMoniker": "BusinessLayer\\Services\\IBookService.cs",
-              "ToolTip": "C:\\Users\\Hu\\Documents\\Programming Projects\\Projects\\BookHouseAPI\\BusinessLayer\\Services\\IBookService.cs",
-              "RelativeToolTip": "BusinessLayer\\Services\\IBookService.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-10T21:01:45.689Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -83,7 +32,7 @@
               "RelativeDocumentMoniker": "DataLayer\\Repository\\BookRepository.cs",
               "ToolTip": "C:\\Users\\Hu\\Documents\\Programming Projects\\Projects\\BookHouseAPI\\DataLayer\\Repository\\BookRepository.cs",
               "RelativeToolTip": "DataLayer\\Repository\\BookRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAABkAAAAAAAAAAAAkwCMAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-10T20:48:54.141Z",
               "EditorCaption": ""
@@ -96,20 +45,20 @@
               "RelativeDocumentMoniker": "DataLayer\\Repository\\IBookRepository.cs",
               "ToolTip": "C:\\Users\\Hu\\Documents\\Programming Projects\\Projects\\BookHouseAPI\\DataLayer\\Repository\\IBookRepository.cs",
               "RelativeToolTip": "DataLayer\\Repository\\IBookRepository.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBQAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-10T20:46:54.149Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "BookController.cs",
               "DocumentMoniker": "C:\\Users\\Hu\\Documents\\Programming Projects\\Projects\\BookHouseAPI\\PresentationLayer\\Controllers\\BookController.cs",
               "RelativeDocumentMoniker": "PresentationLayer\\Controllers\\BookController.cs",
               "ToolTip": "C:\\Users\\Hu\\Documents\\Programming Projects\\Projects\\BookHouseAPI\\PresentationLayer\\Controllers\\BookController.cs",
               "RelativeToolTip": "PresentationLayer\\Controllers\\BookController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACAAAAAAAAAAAAAgwCsAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-09T15:05:00.012Z",
               "EditorCaption": ""

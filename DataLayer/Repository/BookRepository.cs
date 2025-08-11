@@ -30,7 +30,7 @@ namespace DataLayer.Repository
         }
 
         //PUT
-        public async Task<Book> PutBook(int id, Book book)
+        public async Task<Book?> PutBook(int id, Book book)
         {
             _context.Entry(book).State = EntityState.Modified;
             await _context.SaveChangesAsync();

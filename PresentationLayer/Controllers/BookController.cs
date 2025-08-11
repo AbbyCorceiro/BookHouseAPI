@@ -41,7 +41,7 @@ namespace PresentationLayer.Controllers
         {
             var result = await _bookService.PutBook(id, book);
             if (result is null) return NotFound();
-            if (result.Id != id) return BadRequest();
+            if (id != result.Id) return BadRequest();
             return Ok(result);  
         }
 

@@ -2,6 +2,10 @@ using BusinessLayer.Services;
 using DataLayer.Context;
 using DataLayer.Repository;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi.Models;
+using System.Reflection;
+using System.Web;
+using static System.Net.WebRequestMethods;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,7 +17,15 @@ builder.Services.AddOpenApi();
 var connectionString = builder.Configuration.GetConnectionString("Connection");
 builder.Services.AddDbContext<BookHouseDBContext>(options => options.UseSqlServer(connectionString));
 
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(option =>
+    {
+        option.SwaggerDoc("v1", new OpenApiInfo { 
+            Title = "BookHouse API", 
+            Version = "v1" , 
+            Description = "The library api for storing books!"
+        });
+    }
+);
 builder.Services.AddScoped<IBookService, BookService>();
 builder.Services.AddScoped<IBookRepository, BookRepository>();
 var app = builder.Build();
