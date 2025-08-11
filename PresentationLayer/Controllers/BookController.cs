@@ -1,10 +1,10 @@
-﻿using DataLayer.Models;
-using DataLayer.Context;
+﻿using DataLayer.Context;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
+using Models;
 
-namespace PresentationLayer.Controllers
+namespace Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

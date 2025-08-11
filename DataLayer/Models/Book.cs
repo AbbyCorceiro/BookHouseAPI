@@ -1,5 +1,4 @@
-﻿
-namespace DataLayer.Models
+﻿namespace Models
 {
     public class Book
     {
