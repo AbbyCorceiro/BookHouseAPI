@@ -12,3 +12,18 @@ C:\Users\Hu\Documents\Programming Projects\Projects\BookHouseAPI\DataLayer\obj\D
 C:\Users\Hu\Documents\Programming Projects\Projects\BookHouseAPI\DataLayer\obj\Debug\net9.0\3.DataLayer.pdb
 C:\Users\Hu\Documents\Programming Projects\Projects\BookHouseAPI\DataLayer\obj\Debug\net9.0\3.DataLayer.genruntimeconfig.cache
 C:\Users\Hu\Documents\Programming Projects\Projects\BookHouseAPI\DataLayer\obj\Debug\net9.0\ref\3.DataLayer.dll
+E:\VstudioProjects\api\BookHouseAPI\DataLayer\bin\Debug\net9.0\3.DataLayer.deps.json
+E:\VstudioProjects\api\BookHouseAPI\DataLayer\bin\Debug\net9.0\3.DataLayer.runtimeconfig.json
+E:\VstudioProjects\api\BookHouseAPI\DataLayer\bin\Debug\net9.0\3.DataLayer.dll
+E:\VstudioProjects\api\BookHouseAPI\DataLayer\bin\Debug\net9.0\3.DataLayer.pdb
+E:\VstudioProjects\api\BookHouseAPI\DataLayer\obj\Debug\net9.0\3.DataLayer.csproj.AssemblyReference.cache
+E:\VstudioProjects\api\BookHouseAPI\DataLayer\obj\Debug\net9.0\3.DataLayer.GeneratedMSBuildEditorConfig.editorconfig
+E:\VstudioProjects\api\BookHouseAPI\DataLayer\obj\Debug\net9.0\3.DataLayer.AssemblyInfoInputs.cache
+E:\VstudioProjects\api\BookHouseAPI\DataLayer\obj\Debug\net9.0\3.DataLayer.AssemblyInfo.cs
+E:\VstudioProjects\api\BookHouseAPI\DataLayer\obj\Debug\net9.0\3.DataLayer.csproj.CoreCompileInputs.cache
+E:\VstudioProjects\api\BookHouseAPI\DataLayer\obj\Debug\net9.0\3.DataLayer.sourcelink.json
+E:\VstudioProjects\api\BookHouseAPI\DataLayer\obj\Debug\net9.0\3.DataLayer.dll
+E:\VstudioProjects\api\BookHouseAPI\DataLayer\obj\Debug\net9.0\refint\3.DataLayer.dll
+E:\VstudioProjects\api\BookHouseAPI\DataLayer\obj\Debug\net9.0\3.DataLayer.pdb
+E:\VstudioProjects\api\BookHouseAPI\DataLayer\obj\Debug\net9.0\3.DataLayer.genruntimeconfig.cache
+E:\VstudioProjects\api\BookHouseAPI\DataLayer\obj\Debug\net9.0\ref\3.DataLayer.dll

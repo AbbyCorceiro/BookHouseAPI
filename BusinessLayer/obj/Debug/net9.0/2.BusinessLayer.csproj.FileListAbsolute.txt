@@ -13,3 +13,19 @@ C:\Users\Hu\Documents\Programming Projects\Projects\BookHouseAPI\BusinessLayer\o
 C:\Users\Hu\Documents\Programming Projects\Projects\BookHouseAPI\BusinessLayer\obj\Debug\net9.0\refint\2.BusinessLayer.dll
 C:\Users\Hu\Documents\Programming Projects\Projects\BookHouseAPI\BusinessLayer\obj\Debug\net9.0\2.BusinessLayer.pdb
 C:\Users\Hu\Documents\Programming Projects\Projects\BookHouseAPI\BusinessLayer\obj\Debug\net9.0\ref\2.BusinessLayer.dll
+E:\VstudioProjects\api\BookHouseAPI\BusinessLayer\bin\Debug\net9.0\2.BusinessLayer.deps.json
+E:\VstudioProjects\api\BookHouseAPI\BusinessLayer\bin\Debug\net9.0\2.BusinessLayer.dll
+E:\VstudioProjects\api\BookHouseAPI\BusinessLayer\bin\Debug\net9.0\2.BusinessLayer.pdb
+E:\VstudioProjects\api\BookHouseAPI\BusinessLayer\bin\Debug\net9.0\3.DataLayer.dll
+E:\VstudioProjects\api\BookHouseAPI\BusinessLayer\bin\Debug\net9.0\3.DataLayer.pdb
+E:\VstudioProjects\api\BookHouseAPI\BusinessLayer\obj\Debug\net9.0\2.BusinessLayer.csproj.AssemblyReference.cache
+E:\VstudioProjects\api\BookHouseAPI\BusinessLayer\obj\Debug\net9.0\2.BusinessLayer.GeneratedMSBuildEditorConfig.editorconfig
+E:\VstudioProjects\api\BookHouseAPI\BusinessLayer\obj\Debug\net9.0\2.BusinessLayer.AssemblyInfoInputs.cache
+E:\VstudioProjects\api\BookHouseAPI\BusinessLayer\obj\Debug\net9.0\2.BusinessLayer.AssemblyInfo.cs
+E:\VstudioProjects\api\BookHouseAPI\BusinessLayer\obj\Debug\net9.0\2.BusinessLayer.csproj.CoreCompileInputs.cache
+E:\VstudioProjects\api\BookHouseAPI\BusinessLayer\obj\Debug\net9.0\2.BusinessLayer.sourcelink.json
+E:\VstudioProjects\api\BookHouseAPI\BusinessLayer\obj\Debug\net9.0\2.Busine.032FD615.Up2Date
+E:\VstudioProjects\api\BookHouseAPI\BusinessLayer\obj\Debug\net9.0\2.BusinessLayer.dll
+E:\VstudioProjects\api\BookHouseAPI\BusinessLayer\obj\Debug\net9.0\refint\2.BusinessLayer.dll
+E:\VstudioProjects\api\BookHouseAPI\BusinessLayer\obj\Debug\net9.0\2.BusinessLayer.pdb
+E:\VstudioProjects\api\BookHouseAPI\BusinessLayer\obj\Debug\net9.0\ref\2.BusinessLayer.dll

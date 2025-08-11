@@ -1,8 +1,8 @@
 ﻿using DataLayer.Models;
 using DataLayer.Context;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations;
 
 namespace PresentationLayer.Controllers
 {
@@ -11,50 +11,86 @@ namespace PresentationLayer.Controllers
     public class BookController : ControllerBase
     {
         private readonly BookHouseDBContext _context;
-        public BookController(BookHouseDBContext context) 
-        { 
+
+        public BookController(BookHouseDBContext context)
+        {
             _context = context;
         }
 
-        [HttpGet("all")]
-        public async Task<ActionResult<IEnumerable<Book>>> GetAll() 
+        /// <summary>
+        /// Gets all books.
+        /// </summary>
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<Book>>> GetAll()
         {
-            return await _context.Books.ToListAsync();
+            var books = await _context.Books.ToListAsync();
+            return Ok(books);
         }
 
-        [HttpGet("id")]
-        public async Task<ActionResult<IEnumerable<Book>>> GetById(int id) 
+        /// <summary>
+        /// Gets a book by ID.
+        /// </summary>
+        [HttpGet("{id}")]
+        public async Task<ActionResult<Book>> GetById([FromRoute] int id)
         {
             var book = await _context.Books.FindAsync(id);
-            if (book is null) return NotFound("The book doesn´t exist");
+
+            if (book is null)
+                return NotFound($"Book with ID {id} not found.");
+
             return Ok(book);
         }
 
-        [HttpPost("add")]
-        public async Task<ActionResult<Book>> PostBook(Book book) 
+        /// <summary>
+        /// Adds a new book.
+        /// </summary>
+        [HttpPost]
+        public async Task<ActionResult<Book>> PostBook([FromBody, Required] Book book)
         {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
             _context.Books.Add(book);
             await _context.SaveChangesAsync();
-            return CreatedAtAction(nameof(GetById), new { Id = book.Id}, book);
+
+            return CreatedAtAction(nameof(GetById), new { id = book.Id }, book);
         }
 
-        [HttpPut("modify")]
-        public async Task<ActionResult<Book>> PutBook(int id, Book book) 
+        /// <summary>
+        /// Updates an existing book.
+        /// </summary>
+        [HttpPut("{id}")]
+        public async Task<ActionResult<Book>> PutBook([FromRoute] int id, [FromBody, Required] Book book)
         {
-            if (book is null) return NotFound();
-            if (book.Id != id) return BadRequest();
-            _context.Entry(book).State = EntityState.Modified;
+            if (id != book.Id)
+                return BadRequest("The book ID does not match the provided ID.");
+
+            var existingBook = await _context.Books.FindAsync(id);
+
+            if (existingBook is null)
+                return NotFound($"Book with ID {id} not found.");
+
+            _context.Entry(existingBook).CurrentValues.SetValues(book);
             await _context.SaveChangesAsync();
-            return Ok(book);  
+
+            return Ok(existingBook);
         }
 
-        [HttpDelete("delete")]
-        public async Task<ActionResult<Book>> DeleteBook(int id) 
+        /// <summary>
+        /// Deletes a book by its ID.
+        /// </summary>
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteBook([FromRoute] int id)
         {
             var book = await _context.Books.FindAsync(id);
-            if (book is not null) _context.Books.Remove(book);
+
+            if (book is null)
+                return NotFound($"Book with ID {id} not found.");
+
+            _context.Books.Remove(book);
             await _context.SaveChangesAsync();
-            return Ok("Book deleted");
+
+            return NoContent();
         }
     }
 }
