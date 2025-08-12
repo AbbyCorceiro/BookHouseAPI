@@ -4,52 +4,76 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace PresentationLayer.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/books")]
     [ApiController]
     public class BookController : ControllerBase
     {
         private readonly IBookService _bookService;
-        public BookController(IBookService bookService) 
-        { 
+
+        public BookController(IBookService bookService)
+        {
             _bookService = bookService;
         }
 
-        [HttpGet("all")]
-        public async Task<ActionResult<IEnumerable<Book>>> GetAll() 
+        // GET: api/books
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<Book>>> GetAll()
         {
             var result = await _bookService.GetAll();
             return Ok(result);
         }
 
-        [HttpGet("id")]
-        public async Task<ActionResult<IEnumerable<Book>>> GetById(int id) 
+        // GET: api/books/{id}
+        [HttpGet("{id}")]
+        public async Task<ActionResult<Book>> GetById(int id)
         {
             var result = await _bookService.GetById(id);
-            if (result is null) return NotFound("The book doesn´t exist");
+
+            if (result is null) 
+                return NotFound(new { message = "The book doesn't exist." });
+
             return Ok(result);
         }
 
-        [HttpPost("add")]
-        public async Task<ActionResult<Book>> PostBook(Book book) 
+        // POST: api/books
+        [HttpPost]
+        public async Task<ActionResult<Book>> PostBook([FromBody] Book book)
         {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
             var result = await _bookService.PostBook(book);
-            return CreatedAtAction(nameof(GetById), new { Id = book.Id}, book);
+            return CreatedAtAction(nameof(GetById), new { id = result.Id }, result);
         }
 
-        [HttpPut("modify")]
-        public async Task<ActionResult<Book>> PutBook(int id, Book book) 
+        // PUT: api/books/{id}
+        [HttpPut("{id}")]
+        public async Task<ActionResult<Book>> PutBook(int id, [FromBody] Book book)
         {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            if (id != book.Id)
+                return BadRequest(new { message = "Id in URL and body do not match." });
+
             var result = await _bookService.PutBook(id, book);
-            if (result is null) return NotFound();
-            if (id != result.Id) return BadRequest();
-            return Ok(result);  
+
+            if (result is null) 
+                return NotFound(new { message = "The book doesn't exist." });
+
+            return Ok(result);
         }
 
-        [HttpDelete("delete")]
-        public async Task<ActionResult<Book>> DeleteBook(int id) 
+        // DELETE: api/books/{id}
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteBook(int id)
         {
-            var result = await _bookService.DeleteBook(id);   
-            return Ok("Book deleted");
+            var result = await _bookService.DeleteBook(id);
+
+            if (result is null) 
+                return NotFound(new { message = "The book doesn't exist." });
+
+            return Ok(new { message = "Book deleted." });
         }
     }
 }
