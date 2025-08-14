@@ -23,7 +23,12 @@
 
 <h3>What's Next?</h3>
 <ul>
-  <li>[ ] Revisar el endpoint de PUT</li>
+  <li>[x] Revisar el endpoint de PUT
+    <ul>
+      <li>Se implementó un método para buscar si el id que se pasa por parámetro ya existe en la db</li>
+      <li>Se agregó un bloque try/catch para tratar la DbUpdateConcurrencyException</li>
+    </ul>
+  </li>
   <li>[x] Implementar el repositorio con un service y migrar la lógica del código</li>
   <li>[x] Acomodar los endpoints para el repository pattern</li>
 </ul>
