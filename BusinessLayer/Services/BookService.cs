@@ -9,31 +9,16 @@ namespace BusinessLayer.Services
         public BookService(IBookRepository repo) => _bookRepository = repo;
 
         //GET
-        public async Task<IEnumerable<Book>> GetAll() 
-        { 
-            return await _bookRepository.GetAll();
-        }
-        public async Task<Book?> GetById(int id) 
-        { 
-            return await _bookRepository.GetById(id);
-        }
+        public async Task<IEnumerable<Book>> GetAll() => await _bookRepository.GetAll();
+        public async Task<Book?> GetById(int id) => await _bookRepository.GetById(id);
 
         //POST
-        public async Task<Book> PostBook(Book book) 
-        { 
-            return await _bookRepository.PostBook(book);
-        }
+        public async Task<Book> PostBook(Book book) => await _bookRepository.PostBook(book);
 
         //PUT
-        public async Task<Book> PutBook(int id, Book book) 
-        { 
-            return await _bookRepository.PutBook(id, book);
-        }
+        public async Task<Book?> PutBook(int id, Book book) => await _bookRepository.PutBook(id, book);
 
         //DELETE
-        public async Task<Book?> DeleteBook(int id) 
-        { 
-            return await _bookRepository.DeleteBook(id);
-        }
+        public async Task DeleteBook(int id) => await _bookRepository.DeleteBook(id);
     }
 }

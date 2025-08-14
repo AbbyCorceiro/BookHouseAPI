@@ -21,6 +21,6 @@ namespace DataLayer.Repository
         Task<Book?> PutBook(int id, Book book);
 
         //DELETE
-        Task<Book?> DeleteBook(int id);
+        Task DeleteBook(int id);
     }
 }

@@ -32,18 +32,32 @@ namespace DataLayer.Repository
         //PUT
         public async Task<Book?> PutBook(int id, Book book)
         {
+            if (!BookExist(id)) return null; //Se checkea si el libro existe, si no es asi devuelve null
             _context.Entry(book).State = EntityState.Modified;
-            await _context.SaveChangesAsync();
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                return book;
+            }
             return book;
         }
 
         //DELETE
-        public async Task<Book?> DeleteBook(int id)
+        public async Task DeleteBook(int id)
         {
             var book = await _context.Books.FindAsync(id);
             if (book is not null) _context.Books.Remove(book);
             await _context.SaveChangesAsync();
-            return book;
+            return;
         }
+
+        private bool BookExist(int id) //Busca si el id existe en la db
+        {
+            return _context.Books.Any(e => e.Id == id);
+        }
+
     }
 }

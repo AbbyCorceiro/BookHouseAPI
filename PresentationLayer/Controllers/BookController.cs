@@ -37,18 +37,18 @@ namespace PresentationLayer.Controllers
         }
 
         [HttpPut("modify")]
-        public async Task<ActionResult<Book>> PutBook(int id, Book book) 
+        public async Task<ActionResult<Book?>> PutBook(int id, Book book) 
         {
-            var result = await _bookService.PutBook(id, book);
-            if (result is null) return NotFound();
-            if (id != result.Id) return BadRequest();
-            return Ok(result);  
+            var b = await _bookService.PutBook(id, book);
+            if (b is null) return NotFound();
+            else if (b.Id != id) return BadRequest();
+            return Ok(b);
         }
 
         [HttpDelete("delete")]
-        public async Task<ActionResult<Book>> DeleteBook(int id) 
+        public async Task<ActionResult> DeleteBook(int id) 
         {
-            var result = await _bookService.DeleteBook(id);   
+            await _bookService.DeleteBook(id);   
             return Ok("Book deleted");
         }
     }
