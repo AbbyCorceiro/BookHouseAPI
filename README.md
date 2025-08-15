@@ -21,6 +21,83 @@
   <li>Desde el controlador de la capa de presentación se acomodaron los enpoints para recibir un resultado desde el service y devolver el status correspondiente en base a dicho resultado.</li>
 </ul>
 
+<h3>For Testing the API</h3>
+<h5>NuGetPackages Dependency:</h5>
+<ul>
+  <h5>For Entity Framework:</h5>
+  <li>Microsoft.EntityFrameworkCore</li>
+  <li>Microsoft.EntityFrameworkCore.SqlServer</li>
+  <li>Microsoft.EntityFrameworkCore.Tools</li>
+
+  <h5>For Swagger:</h5>
+  <li>Swashbuckle.AspNetCore</li>
+  <li>Swashbuckle.AspNetCore.Swagger</li>
+</ul>
+
+<h5>Http File</h5>
+<ul>
+  <li>Se puede descargar el repositorio y utilizar el archivo .http para testear los endpoints sin necesidad de utilizar Swagger</li>
+  <li>El el archivo .http se encuentran todos los endpoints utilizados con algunas variables para testing</li>
+  <br>
+
+      @PresentationLayer_HostAddress = http://localhost:5059
+
+      //Variables para testing
+      @book_id = 2 
+      @book_deleteId = 6
+
+      //Gets all books in the database
+      GET {{PresentationLayer_HostAddress}}/api/Book/all
+      Accept: application/json
+
+      ###
+
+      //Gets a book by id
+      GET {{PresentationLayer_HostAddress}}/api/Book/id?id={{book_id}} 
+      Accept: application/json
+
+      ###
+
+      //Creates a new book in the database
+      POST {{PresentationLayer_HostAddress}}/api/Book/add 
+      Accept: application/json
+      Content-Type: application/json
+      {
+        "id": 0,
+        "title": "El Principito",
+        "author": "Antoine de Saint-Exupéry",
+        "yearPublication": 1951,
+        "isbn": "9789876373487",
+        "genre": "Novela Infantil",
+        "available": true
+      }
+
+      ###
+
+      //Modifies a book in the database
+      PUT {{PresentationLayer_HostAddress}}/api/Book/modify?id={{book_id}} 
+      Accept: application/json
+      Content-Type: application/json
+      {
+        "id": {{book_id}},
+        "title": "Harry Potter and the Philosopher's Stone",
+        "author": "J. K. Rowling",
+        "yearPublication": 1997,
+        "isbn": "9780747532699",
+        "genre": "Fantasy",
+        "available": false 
+      }    
+
+      ###
+
+      //Removes a book from the database
+      DELETE {{PresentationLayer_HostAddress}}/api/Book/delete?id={{book_deleteId}}
+      Accept: application/json
+
+      ###  
+  
+</ul>
+
 <h3>Endpoints</h3>
 <ul>
   <li>Get All
