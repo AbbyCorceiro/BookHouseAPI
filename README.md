@@ -21,7 +21,68 @@
   <li>Desde el controlador de la capa de presentación se acomodaron los enpoints para recibir un resultado desde el service y devolver el status correspondiente en base a dicho resultado.</li>
 </ul>
 
-<h3>What's Next?</h3>
+<h3>Endpoints</h3>
+<ul>
+  <li>Get All
+    <ul><li>Obtiene todos los libros almacenados en la base de datos (No requiere parámetros)</li></ul>
+    <br>
+    <img width="1836" height="329" alt="Screenshot 2025-08-15 175508" src="https://github.com/user-attachments/assets/e636843b-6072-4ef5-ab51-b5a00a0d2bd2" />
+    <br>
+  </li>
+
+###
+  
+  <li>Get By Id
+    <ul>
+      <li>Obtiene un libro en base a su número de Id</li>
+      <li>Se introduce el número de id en la casilla de parámetro y devuelve el libro correspondiente a dicho id</li>
+      <li>Si el libro no existe la API devuelve un código 404 Not Found</li>
+    </ul>
+    <br>
+    <img width="1818" height="477" alt="Screenshot 2025-08-15 184611" src="https://github.com/user-attachments/assets/b9d7fb27-d4e5-40e7-8ed0-f484fd9edab2" />
+    <br>
+  </li>
+
+###
+  
+  <li>Post Book
+    <ul>
+      <li>Crea un libro nuevo en la base de datos</li>
+      <li>Requiere que se completen los datos del objeto libro que se va a crear</li>
+    </ul>
+    <br>
+    <img width="1823" height="595" alt="Screenshot 2025-08-15 184813" src="https://github.com/user-attachments/assets/a8ee0c6f-9b54-499d-b755-64aabf502f73" />
+    <br>
+  </li>
+
+###
+  
+  <li>Put Book
+  <ul>
+    <li>Modifica un libro existente en la base de datos</li>
+    <li>Si el id del libro a modificar no existe devuelve un código 404 Not Found</li>
+    <li>Si el id que paso por parámetro es diferente al id del los datos del libro a introducir entonces devuelve un código 400 Bad Request</li>
+    <li>Requiere que el número de id del libro por parámetro, y el id del objeto libro que estoy modificando sean iguales y existentes en la base de datos para modificar el libro correctamente</li>
+    </ul>
+    <br>
+    <img width="1823" height="823" alt="Screenshot 2025-08-15 184901" src="https://github.com/user-attachments/assets/eac94997-7218-4008-9e66-357898d325eb" />
+    <br>
+  </li>
+
+###
+
+<li>Delete Book
+  <ul>
+    <li>Elimina un libro existente de la base de datos en base a su número de Id</li>
+    <li>Requiere el número de Id por parámetro</li>
+    <li>Si el libro no existe devuelve un código 404 Not Found</li>
+  </ul>
+  <br>
+  <img width="1818" height="475" alt="Screenshot 2025-08-15 184924" src="https://github.com/user-attachments/assets/0c2050cf-aefb-4e9c-9136-df49c0b08c91" />
+  <br>
+</li>
+</ul>
+<h3>Last Changes:</h3>
 <ul>
   <li>[x] Revisar el endpoint de PUT
     <ul>
@@ -32,6 +93,7 @@
   <li>[x] Implementar el repositorio con un service y migrar la lógica del código</li>
   <li>[x] Acomodar los endpoints para el repository pattern</li>
 </ul>
+
 
 
 
