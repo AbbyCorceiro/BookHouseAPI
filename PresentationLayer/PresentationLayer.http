@@ -2,22 +2,22 @@
 
 //Variables para testing
 @book_id = 2 
-@book_deleteId = 6
+@book_deleteId = 8
 
 //Gets all books in the database
-GET {{PresentationLayer_HostAddress}}/api/Book/all
+GET {{PresentationLayer_HostAddress}}/api/Books
 Accept: application/json
 
 ###
 
 //Gets a book by id
-GET {{PresentationLayer_HostAddress}}/api/Book/id?id={{book_id}} 
+GET {{PresentationLayer_HostAddress}}/api/Books/{{book_id}} 
 Accept: application/json
 
 ###
 
 //Creates a new book in the database
-POST {{PresentationLayer_HostAddress}}/api/Book/add 
+POST {{PresentationLayer_HostAddress}}/api/Books
 Accept: application/json
 Content-Type: application/json
 {
@@ -33,7 +33,7 @@ Content-Type: application/json
 ###
 
 //Modifies a book in the database
-PUT {{PresentationLayer_HostAddress}}/api/Book/modify?id={{book_id}} 
+PUT {{PresentationLayer_HostAddress}}/api/Books/{{book_id}} 
 Accept: application/json
 Content-Type: application/json
 {
@@ -49,7 +49,7 @@ Content-Type: application/json
 ###
 
 //Removes a book from the database
-DELETE {{PresentationLayer_HostAddress}}/api/Book/delete?id={{book_deleteId}}
+DELETE {{PresentationLayer_HostAddress}}/api/Books/{{book_deleteId}}
 Accept: application/json
 
 ###
