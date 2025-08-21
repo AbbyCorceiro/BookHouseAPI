@@ -159,16 +159,18 @@
   <br>
 </li>
 </ul>
-<h3>Last Changes:</h3>
+<h3>To Do:</h3>
 <ul>
-  <li>[x] Revisar el endpoint de PUT
+  <li>[ ] Aplicar un Dto</li>
+  <li>[ ] Añadir validaciones de modelo</li>
+  <li>[ ] Utilizar los verbos http manteniendo la ruta original</li>
+  <li>[ ] Agregar manejo de excepciones en el service</li>
+  <li>[ ] Revisar el endpoint de PUT
     <ul>
-      <li>Se implementó un método para buscar si el id que se pasa por parámetro ya existe en la db</li>
-      <li>Se agregó un bloque try/catch para tratar la DbUpdateConcurrencyException</li>
+      <li>[x] Se implementó un método para buscar si el id que se pasa por parámetro ya existe en la db</li>
+      <li>[ ] Revisar la excepción de DbUpdateConcurrencyExcepcion a través del service</li>
     </ul>
   </li>
-  <li>[x] Implementar el repositorio con un service y migrar la lógica del código</li>
-  <li>[x] Acomodar los endpoints para el repository pattern</li>
 </ul>
 
 
