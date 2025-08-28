@@ -16,6 +16,7 @@ namespace PresentationLayer.Controllers
         }
 
         [HttpGet]
+        [SwaggerOperation(Summary = "Gets all books")]
         public async Task<ActionResult<IEnumerable<Book>>> GetAll() 
         {
             var result = await _bookService.GetAll();
@@ -23,6 +24,7 @@ namespace PresentationLayer.Controllers
         }
 
         [HttpGet("{id}")]
+        [SwaggerOperation(Summary = "Gets a book by id")]
         public async Task<ActionResult<Book>> GetById(int id) 
         {
             var result = await _bookService.GetById(id);
@@ -31,6 +33,7 @@ namespace PresentationLayer.Controllers
         }
 
         [HttpPost]
+        [SwaggerOperation(Summary = "Creates a book")]
         public async Task<ActionResult<Book>> PostBook(Book book) 
         {
             var result = await _bookService.PostBook(book);
@@ -38,6 +41,7 @@ namespace PresentationLayer.Controllers
         }
 
         [HttpPut("{id}")]
+        [SwaggerOperation(Summary = "Modifies an existing book")]
         public async Task<ActionResult<Book?>> PutBook(int id, Book book) 
         {
             var b = await _bookService.PutBook(id, book);
@@ -47,6 +51,7 @@ namespace PresentationLayer.Controllers
         }
 
         [HttpDelete("{id}")]
+        [SwaggerOperation(Summary = "Deletes a book")]
         public async Task<ActionResult> DeleteBook(int id) 
         {
             await _bookService.DeleteBook(id);   

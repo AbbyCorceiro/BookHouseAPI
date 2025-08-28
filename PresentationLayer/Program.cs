@@ -24,6 +24,7 @@ builder.Services.AddSwaggerGen(option =>
             Version = "v1" , 
             Description = "The library api for storing books!"
         });
+        option.EnableAnnotations();
     }
 );
 builder.Services.AddScoped<IBookService, BookService>();
