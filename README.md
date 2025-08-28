@@ -163,7 +163,6 @@
 <ul>
   <li>[ ] Aplicar un Dto</li>
   <li>[ ] Añadir validaciones de modelo</li>
-  <li>[ ] Utilizar los verbos http manteniendo la ruta original</li>
   <li>[ ] Agregar manejo de excepciones en el service</li>
   <li>[ ] Revisar el endpoint de PUT
     <ul>
