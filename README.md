@@ -40,61 +40,61 @@
   <li>El el archivo .http se encuentran todos los endpoints utilizados con algunas variables para testing</li>
   <br>
 
-      @PresentationLayer_HostAddress = http://localhost:5059
-
-      //Variables para testing
-      @book_id = 2 
-      @book_deleteId = 6
-
-      //Gets all books in the database
-      GET {{PresentationLayer_HostAddress}}/api/Book/all
-      Accept: application/json
-
-      ###
-
-      //Gets a book by id
-      GET {{PresentationLayer_HostAddress}}/api/Book/id?id={{book_id}} 
-      Accept: application/json
-
-      ###
-
-      //Creates a new book in the database
-      POST {{PresentationLayer_HostAddress}}/api/Book/add 
-      Accept: application/json
-      Content-Type: application/json
-      {
-        "id": 0,
-        "title": "El Principito",
-        "author": "Antoine de Saint-Exupéry",
-        "yearPublication": 1951,
-        "isbn": "9789876373487",
-        "genre": "Novela Infantil",
-        "available": true
-      }
-
-      ###
-
-      //Modifies a book in the database
-      PUT {{PresentationLayer_HostAddress}}/api/Book/modify?id={{book_id}} 
-      Accept: application/json
-      Content-Type: application/json
-      {
-        "id": {{book_id}},
-        "title": "Harry Potter and the Philosopher's Stone",
-        "author": "J. K. Rowling",
-        "yearPublication": 1997,
-        "isbn": "9780747532699",
-        "genre": "Fantasy",
-        "available": false 
-      }    
-
-      ###
-
-      //Removes a book from the database
-      DELETE {{PresentationLayer_HostAddress}}/api/Book/delete?id={{book_deleteId}}
-      Accept: application/json
-
-      ###  
+    @PresentationLayer_HostAddress = http://localhost:5059
+    
+    //Variables para testing
+    @book_id = 2 
+    @book_deleteId = 8
+    
+    //Gets all books in the database
+    GET {{PresentationLayer_HostAddress}}/api/Books
+    Accept: application/json
+    
+    ###
+    
+    //Gets a book by id
+    GET {{PresentationLayer_HostAddress}}/api/Books/{{book_id}} 
+    Accept: application/json
+    
+    ###
+    
+    //Creates a new book in the database
+    POST {{PresentationLayer_HostAddress}}/api/Books
+    Accept: application/json
+    Content-Type: application/json
+    {
+      "id": 0,
+      "title": "El Principito",
+      "author": "Antoine de Saint-Exupéry",
+      "yearPublication": 1951,
+      "isbn": "9789876373487",
+      "genre": "Novela Infantil",
+      "available": true
+    }
+    
+    ###
+    
+    //Modifies a book in the database
+    PUT {{PresentationLayer_HostAddress}}/api/Books/{{book_id}} 
+    Accept: application/json
+    Content-Type: application/json
+    {
+      "id": {{book_id}},
+      "title": "Harry Potter and the Philosopher's Stone",
+      "author": "J. K. Rowling",
+      "yearPublication": 1997,
+      "isbn": "9780747532699",
+      "genre": "Fantasy",
+      "available": false 
+    }
+    
+    ###
+    
+    //Removes a book from the database
+    DELETE {{PresentationLayer_HostAddress}}/api/Books/{{book_deleteId}}
+    Accept: application/json
+    
+    ###
   
 </ul>
 
@@ -161,7 +161,6 @@
 </ul>
 <h3>To Do:</h3>
 <ul>
-  <li>[ ] Aplicar un Dto</li>
   <li>[ ] Añadir validaciones de modelo</li>
   <li>[ ] Agregar manejo de excepciones en el service</li>
   <li>[ ] Revisar el endpoint de PUT
@@ -170,6 +169,7 @@
       <li>[ ] Revisar la excepción de DbUpdateConcurrencyExcepcion a través del service</li>
     </ul>
   </li>
+  <li>[ ] Aplicar un Dto</li>
 </ul>
 
 
